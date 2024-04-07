@@ -6,7 +6,7 @@ def program():
     filtered_list = rozl
 
     for i in range(5):
-        lit1 = input(f"Podaj {i+1}. literę/litery:")
+        lit1 = input(f"Podaj {i+1}. literę:")
         pier = []
         for liter in lit1:
             pier.append(liter)
@@ -18,5 +18,7 @@ def program():
 
         filtered_list = wynik
         print(filtered_list)
+        if len(filtered_list) == 1:
+            quit()
 
 program()
